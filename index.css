@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "google sans";
+    src: url(./fonts/google-sans-cufonfonts-webfont/ProductSans-Light.woff);
+  }
+  
+@font-face {
+    font-family: "products san";
+    src:
+      url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
+  }
+
+
+body {
+    background-color: #ECF8F1;
+}
+
+
+.wrapper {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+.topnav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -7rem;
+}
+
+.topnav .topnav-items {
+    display: flex;
+    // no need
+    margin-right: -8rem;
+}
+
+.topnav .topnav-items {
+   list-style: none; 
+
+}
+
+.topnav .topnav-items a {
+    padding: 1rem;
+}
+ a {
+    font-family: "google sans";
+    font-size: 14px;
+}
+
+.active {
+    background-color: lightgray;
+    color: red;
+    text-decoration: none;
+}
+
+
+.topnav .topnav-items a:hover {
+    color: #009688;
+    cursor: pointer;
+}
+
+
+.corner {
+    display: flex;
+}
+
+.corner .profile {
+    border-radius: 50%;
+    height: 3rem;
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+    transform: scaleX(-1);
+    width: 3rem;
+    
+}
+
+.header {
+    display: flex;
+    margin-top: 5rem; 
+}
+
+@media screen and (max-width: 950px) {
+    .hero-card{
+        display: none;
+    }
+
+    //
+    .header .vertical{
+        max-width:100%;
+    }
+
+    .bag6 {
+        display: none;
+    }
+
+    .topnav{
+        margin :  0 -5rem;
+        position: relative;
+    }
+
+    .topnav .topnav-items li a {
+        display : none;
+    }
+
+    .topnav .icon-menu {
+        cursor: pointer;
+        margin-right: 100px;
+      }
+   
+    .vertical .header-text p{
+        margin:0;
+        padding:0;
+        
+    }
+    .corner {
+        margin: 0 0;
+    }
+    .active {
+        background-color: gray;
+        color: black;
+        text-decoration: none;
+    }
+
+    .topnav-items{
+        background-color: lightgray;
+        flex-direction: column;
+        left: 380px;
+        margin-right: 200px;
+        position:absolute;
+        top: 10px;
+        visibility: hidden;
+        width: 20%;
+}
+
+
+    .topnav .topnav-items .btn:hover{
+        background-color:#484848;
+
+    }
+
+    .topnav .topnav-items .btn {
+        align-items: center;
+        border: 1px solid black;
+        color: white;
+        margin: 0;
+        padding: 20px 0 20px 20px;
+      }
+   
+}
+
+
+.icon-menu {
+    display: none;
+    margin-right: -50px;
+    width: 35px;
+}
+
+.hero-card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2);
+    height: 40%; 
+    margin-right: 3%;
+    margin-top: 35.3%; 
+    width: 25%;
+ 
+}
+
+.hero-card img{
+    height: 100%;
+    margin-top: -332px;
+    object-fit: fill;
+    width: 100%;
+  
+}
+
+.hero-card h2{
+    font-family: "products san";
+
+}
+.hero-text{
+    text-align: center;
+    
+}
+
+.hero-text p{
+    color: #9C8E76; 
+    font-family: "google sans"; 
+    padding: 1rem;  
+}
+
+.details {
+    display: flex;
+    font-family: "products san";
+    justify-content: space-around;
+}
+
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.vertical .header-text{
+    margin-left: 33px;
+}
+
+.vertical .header-text p{
+    color: #9C8E76; 
+    font-family: "google sans";
+    line-height: 22px;
+    max-width: 400px;
+}
+
+.verticalp{
+    font-family: "products san";
+    font-size: 54px;
+    font-weight: bold;
+}
+
+
+
+.vertical .header-text h2 {
+    color: #EB5757;
+    font-family: "products san";
+    font-weight: 700;
+}
+
+.vertical .header-text h4 {
+    color: #828282;
+    font-family: "products san";
+}
+
+.header-cards {
+    align-items: flex-end;
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 18.5%;
+    
+}
+
+.header-card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2);
+    margin-right: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    width: 29%;
+
+}
+.header-card h3{
+    font-family: "products san";
+}
+.header-cards img{
+    margin-top: -200px;
+    object-fit: fill;
+    width: 100%;
+}
+
+.header-card p{
+    color: #9C8E76;    
+    font-family: "google sans";
+    line-height: 1.3;
+    margin-top:-30px;
+    padding: 1.5rem;
+}
+
+.view-more {
+    align-self: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2);
+    height: 40%;
+    margin-top: 60px;
+    text-align: center;
+    width: 24%;
+   
+}
+
+.view-more h4{
+    color: #3F3631;
+    font-family: "products san";
+    margin-top: -10px;
+}
+
+.view-more img{ 
+    margin-top: 4px;
+    width: 80px;
+}
+
+.grid-view {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    width:80%;
+}
+
+
+.grid-card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;    
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2);  
+    margin-bottom: 20px;
+    margin-top: 150px; 
+    text-align: center;
+    text-align: center; 
+
+}
+
+.grid-card h2{
+    font-family: "products san";
+    font-size: 18px;
+}
+
+.grid-card img {
+    margin-top: -200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.grid-card p{
+    color: #9C8E76;    
+    font-family: "google sans"; 
+    padding: 15px;
+}
